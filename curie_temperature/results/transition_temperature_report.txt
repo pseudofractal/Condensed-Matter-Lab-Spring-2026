@@ -1,0 +1,34 @@
+Transition Temperature (Curie) Report
+==========================================
+Uncertainty inputs: dT = 0.100 degC, dVdc = dVsc = 0.100 V, MC samples = 400
+==========================================
+SC1 (22 nF)
+Tc from peak epsilon_r: 127.00 +/- 0.54 degC
+Tc from max d(epsilon_r)/dT: 124.00 +/- 0.53 degC
+Combined Tc: 125.50 +/- 1.59 degC (1.27% relative)
+Method difference |Tc_peak - Tc_derivative|: 3.00 degC
+Epsilon smoothing residual std: 1.2973e-01
+Mean propagated epsilon instrument uncertainty: 8.8463e-02
+MC Tc std (peak epsilon_r): 0.1915 degC
+MC Tc std (max d(epsilon_r)/dT): 0.1819 degC
+------------------------------------------
+SC2 (39 nF)
+Tc from peak epsilon_r: 130.00 +/- 0.55 degC
+Tc from max d(epsilon_r)/dT: 127.00 +/- 0.66 degC
+Combined Tc: 128.50 +/- 1.62 degC (1.26% relative)
+Method difference |Tc_peak - Tc_derivative|: 3.00 degC
+Epsilon smoothing residual std: 8.6734e-02
+Mean propagated epsilon instrument uncertainty: 1.1852e-01
+MC Tc std (peak epsilon_r): 0.2266 degC
+MC Tc std (max d(epsilon_r)/dT): 0.4228 degC
+------------------------------------------
+SC3 (62 nF)
+Tc from peak epsilon_r: 127.00 +/- 0.58 degC
+Tc from max d(epsilon_r)/dT: 123.00 +/- 0.71 degC
+Combined Tc: 125.00 +/- 2.10 degC (1.68% relative)
+Method difference |Tc_peak - Tc_derivative|: 4.00 degC
+Epsilon smoothing residual std: 1.3951e-01
+Mean propagated epsilon instrument uncertainty: 2.1752e-01
+MC Tc std (peak epsilon_r): 0.3012 degC
+MC Tc std (max d(epsilon_r)/dT): 0.5038 degC
+------------------------------------------

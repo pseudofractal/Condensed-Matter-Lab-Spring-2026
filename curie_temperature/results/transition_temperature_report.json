@@ -1,0 +1,44 @@
+{
+  "SC1 (22 nF)": {
+    "Tc_peak_degC": 127.0,
+    "Tc_peak_unc_degC": 0.5361972624259396,
+    "Tc_derivative_degC": 124.0,
+    "Tc_derivative_unc_degC": 0.53283222257064,
+    "Tc_combined_degC": 125.5,
+    "Tc_combined_unc_degC": 1.592390030723633,
+    "Tc_combined_unc_pct": 1.2688366778674365,
+    "Tc_method_difference_degC": 3.0,
+    "epsilon_noise_std": 0.12973020524937395,
+    "epsilon_instr_unc_mean": 0.08846254237911369,
+    "Tc_peak_mc_std": 0.19150501533834188,
+    "Tc_derivative_mc_std": 0.18187040461887877
+  },
+  "SC2 (39 nF)": {
+    "Tc_peak_degC": 130.0,
+    "Tc_peak_unc_degC": 0.5496974575962015,
+    "Tc_derivative_degC": 127.0,
+    "Tc_derivative_unc_degC": 0.655426981879485,
+    "Tc_combined_degC": 128.5,
+    "Tc_combined_unc_degC": 1.6165027771876537,
+    "Tc_combined_unc_pct": 1.2579788149320263,
+    "Tc_method_difference_degC": 3.0,
+    "epsilon_noise_std": 0.08673413731708976,
+    "epsilon_instr_unc_mean": 0.11851582019854949,
+    "Tc_peak_mc_std": 0.2265699926168387,
+    "Tc_derivative_mc_std": 0.4227897766530281
+  },
+  "SC3 (62 nF)": {
+    "Tc_peak_degC": 127.0,
+    "Tc_peak_unc_degC": 0.5844456406363291,
+    "Tc_derivative_degC": 123.0,
+    "Tc_derivative_unc_degC": 0.7103652655912366,
+    "Tc_combined_degC": 125.0,
+    "Tc_combined_unc_degC": 2.1021735943355067,
+    "Tc_combined_unc_pct": 1.6817388754684055,
+    "Tc_method_difference_degC": 4.0,
+    "epsilon_noise_std": 0.13951494809364853,
+    "epsilon_instr_unc_mean": 0.21752098335360873,
+    "Tc_peak_mc_std": 0.30123640803441376,
+    "Tc_derivative_mc_std": 0.5037712548619411
+  }
+}
