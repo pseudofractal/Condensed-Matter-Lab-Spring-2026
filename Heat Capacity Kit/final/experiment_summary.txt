@@ -4,22 +4,28 @@ Water Equivalent (W): 2.5696e+01 +/- 8.2915e-01 J/K
 ----------------------------------------
 Material: Copper
   Applied Current: 0.28 A
+  Data Points Used (n): 5
+  Std dev of dt: 7.6175e-01 s
+  Std error of mean dt: 3.4067e-01 s
   Measured Cv:     9.4283e+02 +/- 2.1484e+02 J/(kg·K)
   Literature Cv:   385.0 J/(kg·K)
   Relative Error:  144.89%
-  Fit Quality R2:  0.00000
 
 Material: Aluminum
   Applied Current: 0.29 A
+  Data Points Used (n): 5
+  Std dev of dt: 1.3861e+00 s
+  Std error of mean dt: 6.1988e-01 s
   Measured Cv:     1.7106e+03 +/- 1.2448e+03 J/(kg·K)
   Literature Cv:   900.0 J/(kg·K)
   Relative Error:  90.06%
-  Fit Quality R2:  0.00000
 
 Material: Brass
   Applied Current: 0.28 A
+  Data Points Used (n): 5
+  Std dev of dt: 9.1860e-01 s
+  Std error of mean dt: 4.1081e-01 s
   Measured Cv:     8.1255e+02 +/- 2.5344e+02 J/(kg·K)
   Literature Cv:   380.0 J/(kg·K)
   Relative Error:  113.83%
-  Fit Quality R2:  0.00000
 

@@ -10,6 +10,7 @@ import pandas as pd
 from pint import UnitRegistry
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
+import shutil
 
 # Initialize Unit Registry and satisfy type checkers
 ureg = UnitRegistry()
@@ -109,9 +110,12 @@ def perform_interval_analysis(
   intervals = calc_df["dt_s"].to_numpy()
   mean_dt = np.mean(intervals)
   std_dt = np.std(intervals, ddof=1)
+  sem_dt = std_dt / np.sqrt(len(intervals)) if len(intervals) > 0 else np.nan
 
   return {
     "mean_dt": ufloat(mean_dt, std_dt),
+    "std_dt": float(std_dt),
+    "sem_dt": float(sem_dt),
     "all_x": df["Temp_C"].to_numpy(),
     "all_y": df["dt_s"].to_numpy(),
     "n": len(intervals),
@@ -222,6 +226,35 @@ def generate_latex_output(
   paths: dict[str, Path], summary: list[dict], all_data: dict[str, pd.DataFrame]
 ):
   """Generates LaTeX tables for results and raw data, converted to images."""
+  # Resolve tool paths if not on PATH
+  pdflatex_cmd = shutil.which("pdflatex")
+  if pdflatex_cmd is None:
+    candidate = Path(r"C:\Users\Dell\AppData\Local\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe")
+    if candidate.exists():
+      pdflatex_cmd = str(candidate)
+
+  magick_cmd = shutil.which("magick")
+  if magick_cmd is None:
+    candidate = Path(r"C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\magick.exe")
+    if candidate.exists():
+      magick_cmd = str(candidate)
+
+  latex_cmd = shutil.which("latex")
+  if latex_cmd is None:
+    candidate = Path(r"C:\Users\Dell\AppData\Local\Programs\MiKTeX\miktex\bin\x64\latex.exe")
+    if candidate.exists():
+      latex_cmd = str(candidate)
+
+  dvipng_cmd = shutil.which("dvipng")
+  if dvipng_cmd is None:
+    candidate = Path(r"C:\Users\Dell\AppData\Local\Programs\MiKTeX\miktex\bin\x64\dvipng.exe")
+    if candidate.exists():
+      dvipng_cmd = str(candidate)
+
+  if pdflatex_cmd is None and latex_cmd is None:
+    print("LaTeX tools not found. Skipping PNG table generation.")
+    return
+
   # 1. Results Table
   res_tex = paths["final"] / "results_table.tex"
   res_content = [
@@ -268,10 +301,12 @@ def generate_latex_output(
   ]
 
   header1 = (
-    " & ".join([rf"\multicolumn{{2}}{{c}}{{{mat}}}" for mat in order if mat in all_data]) + r" \\"
+    " & ".join([rf"\multicolumn{{2}}{{c}}{{{mat}}}" for mat in order if mat in all_data])
+    + r" \\"
   )
   header2 = (
-    " & ".join([r"$T$ [$^\circ$C] & $\Delta t$ [s]" for mat in order if mat in all_data]) + r" \\"
+    " & ".join([r"$T$ [$^\circ$C] & $\Delta t$ [s]" for mat in order if mat in all_data])
+    + r" \\"
   )
 
   data_content.extend([header1, header2, r"\midrule"])
@@ -293,9 +328,12 @@ def generate_latex_output(
   # Compilation
   for tex_file, out_name in [(res_tex, "results_summary.png"), (data_tex, "data_table.png")]:
     try:
+      if pdflatex_cmd is None or magick_cmd is None:
+        raise RuntimeError("pdflatex/magick not available")
+
       subprocess.run(
         [
-          "pdflatex",
+          pdflatex_cmd,
           "-interaction=nonstopmode",
           "-output-directory",
           str(paths["final"]),
@@ -306,7 +344,7 @@ def generate_latex_output(
       )
       subprocess.run(
         [
-          "magick",
+          magick_cmd,
           "-density",
           "300",
           str(tex_file.with_suffix(".pdf")),
@@ -314,13 +352,45 @@ def generate_latex_output(
         ],
         check=True,
       )
+    except Exception as e:
+      # Fallback: latex -> dvi -> dvipng (no Ghostscript needed)
+      if latex_cmd and dvipng_cmd:
+        try:
+          subprocess.run(
+            [
+              latex_cmd,
+              "-interaction=nonstopmode",
+              "-output-directory",
+              str(paths["final"]),
+              str(tex_file),
+            ],
+            check=True,
+            capture_output=True,
+          )
+          subprocess.run(
+            [
+              dvipng_cmd,
+              "-D",
+              "300",
+              "-T",
+              "tight",
+              "-o",
+              str(paths["final"] / out_name),
+              str(tex_file.with_suffix(".dvi")),
+            ],
+            check=True,
+            capture_output=True,
+          )
+        except Exception as e2:
+          print(f"Latex/DVIPNG error for {tex_file.name}: {e2}")
+      else:
+        print(f"Latex/Magick error for {tex_file.name}: {e}")
+    finally:
       # Cleanup
-      for ext in [".aux", ".log", ".pdf", ".tex"]:
+      for ext in [".aux", ".log", ".pdf", ".tex", ".dvi"]:
         p = tex_file.with_suffix(ext)
         if p.exists():
           os.remove(p)
-    except Exception as e:
-      print(f"Latex/Magick error for {tex_file.name}: {e}")
 
 
 def main():
@@ -400,8 +470,10 @@ def main():
         "Current": sample["current_A"],
         "Mass": sample["mass_kg"],
         "Cv": cv_val,
-        "R2": 0.0,
-      }  # R2 not relevant for mean
+        "n": res_mat["n"],
+        "std_dt": res_mat["std_dt"],
+        "sem_dt": res_mat["sem_dt"],
+      }  # Stats for mean-based method
     )
 
   if not found_phase2:
@@ -422,10 +494,13 @@ def main():
       error = ((exp_val - lit) / lit) * 100 if lit != 0 else 0
       f.write(f"Material: {item['Material']}\n")
       f.write(f"  Applied Current: {item['Current']:.2f} A\n")
+      f.write(f"  Data Points Used (n): {item['n']}\n")
+      f.write(f"  Std dev of dt: {item['std_dt']:.4e} s\n")
+      f.write(f"  Std error of mean dt: {item['sem_dt']:.4e} s\n")
       f.write(f"  Measured Cv:     {item['Cv'].n:.4e} +/- {item['Cv'].s:.4e} J/(kg·K)\n")
       f.write(f"  Literature Cv:   {lit} J/(kg·K)\n")
       f.write(f"  Relative Error:  {error:.2f}%\n")
-      f.write(f"  Fit Quality R2:  {item['R2']:.5f}\n\n")
+      f.write("\n")
 
   print(f"Analysis complete for {len(summary_results)} materials. Results in {report_path}")
 
