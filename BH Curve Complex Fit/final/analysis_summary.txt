@@ -1,0 +1,40 @@
+B-H CURVE ANALYSIS REPORT (COMPLEX FIT)
+========================================
+
+Model and Formulas
+------------------
+Both oscilloscope channels were fitted with a harmonic trigonometric model V(t) = a0 + sum[a_n sin(nwt) + b_n cos(nwt)], using harmonics up to N = 5.
+H = N*Vx/(R*L), with N=300, R=55.0 ohm, L=0.0323 m
+B = 0.5*Vy [tesla]
+Parametric loop-area formula: A_loop = |integral H(t) * (dB/dt) dt over one cycle|
+Energy loss per cycle per unit volume: E_loss = A_loop
+Power loss per unit volume: P_loss = f * E_loss
+
+Blank correction: B_corrected = B_measured - alpha*H
+alpha = 7.352629e-05 T m/A
+
+Transformer Stampings
+---------------------
+C-V1: f=50.042 Hz, R2(Vx)=0.99984, R2(Vy)=0.99962, A_loop=476.161 J/m^3, E_loss=476.161 J/m^3/cycle, P_loss=23828 W/m^3, Br=0.010659 T, Hc=491.829 A/m
+C-V2: f=49.999 Hz, R2(Vx)=0.99988, R2(Vy)=0.99912, A_loop=281.343 J/m^3, E_loss=281.343 J/m^3/cycle, P_loss=14066.8 W/m^3, Br=0.00706952 T, Hc=132.313 A/m
+C-V3: f=49.964 Hz, R2(Vx)=0.99988, R2(Vy)=0.99929, A_loop=335.126 J/m^3, E_loss=335.126 J/m^3/cycle, P_loss=16744.2 W/m^3, Br=0.00790798 T, Hc=149.154 A/m
+
+Ferrite Rod
+-----------
+C-V1: f=49.950 Hz, R2(Vx)=0.99978, R2(Vy)=0.99941, A_loop=52.5551 J/m^3, E_loss=52.5551 J/m^3/cycle, P_loss=2625.15 W/m^3, Br=0.00255101 T, Hc=86.3888 A/m
+C-V2: f=49.931 Hz, R2(Vx)=0.99985, R2(Vy)=0.99967, A_loop=85.6173 J/m^3, E_loss=85.6173 J/m^3/cycle, P_loss=4274.97 W/m^3, Br=0.00327843 T, Hc=113.721 A/m
+C-V3: f=49.955 Hz, R2(Vx)=0.99986, R2(Vy)=0.99961, A_loop=207.747 J/m^3, E_loss=207.747 J/m^3/cycle, P_loss=10378 W/m^3, Br=0.00459217 T, Hc=101.542 A/m
+
+Iron Nail
+---------
+C-V1: f=49.946 Hz, R2(Vx)=0.99975, R2(Vy)=0.99894, A_loop=553.106 J/m^3, E_loss=553.106 J/m^3/cycle, P_loss=27625.5 W/m^3, Br=0.0222201 T, Hc=442.569 A/m
+C-V2: f=49.968 Hz, R2(Vx)=0.99987, R2(Vy)=0.99945, A_loop=1139.72 J/m^3, E_loss=1139.72 J/m^3/cycle, P_loss=56949.6 W/m^3, Br=0.0314366 T, Hc=608.07 A/m
+C-V3: f=49.974 Hz, R2(Vx)=0.99985, R2(Vy)=0.99966, A_loop=1936.36 J/m^3, E_loss=1936.36 J/m^3/cycle, P_loss=96768.2 W/m^3, Br=0.0410012 T, Hc=773.274 A/m
+
+Hacksaw Blade
+-------------
+C-V1: f=49.949 Hz, R2(Vx)=0.99987, R2(Vy)=0.99980, A_loop=476.455 J/m^3, E_loss=476.455 J/m^3/cycle, P_loss=23798.5 W/m^3, Br=0.0363154 T, Hc=229.536 A/m
+C-V2: f=49.924 Hz, R2(Vx)=0.99986, R2(Vy)=0.99988, A_loop=784.779 J/m^3, E_loss=784.779 J/m^3/cycle, P_loss=39179.1 W/m^3, Br=0.0442692 T, Hc=290.679 A/m
+C-V3: f=49.938 Hz, R2(Vx)=0.99991, R2(Vy)=0.99990, A_loop=978.669 J/m^3, E_loss=978.669 J/m^3/cycle, P_loss=48872.6 W/m^3, Br=0.0506891 T, Hc=333.65 A/m
+
+Energy-loss ranking at C-V3: Iron Nail > Hacksaw Blade > Transformer Stampings > Ferrite Rod
