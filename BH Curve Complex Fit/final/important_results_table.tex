@@ -1,0 +1,31 @@
+\documentclass[varwidth=24cm,border=8pt]{standalone}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\begin{document}
+\begin{minipage}{23cm}
+\centering
+{\Large \textbf{Complex-Fit B-H Curve Results}}\\[0.4em]
+{\small Harmonic fitting model for both channels: }\\[0.2em]
+{\small $V(t)=a_0+\sum_{n=1}^{N}\left[a_n\sin(n\omega t)+b_n\cos(n\omega t)\right],\quad N=5$}\\[0.5em]
+{\small $A_{\mathrm{loop}}=\left|\int_0^T H(t)\,\dfrac{dB}{dt}\,dt\right|,\quad E_{\mathrm{loss}}=A_{\mathrm{loop}},\quad P_{\mathrm{loss}}=fE_{\mathrm{loss}}$}\\[0.7em]
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llrrrrrr}
+\toprule
+Specimen & Drive & $f~(\mathrm{Hz})$ & $A_{\mathrm{loop}}~(\mathrm{J\,m^{-3}})$ & $E_{\mathrm{loss}}~(\mathrm{J\,m^{-3}\,cycle^{-1}})$ & $P_{\mathrm{loss}}~(\mathrm{W\,m^{-3}})$ & $B_r~(\mathrm{T})$ & $H_c~(\mathrm{A\,m^{-1}})$ \\
+\midrule
+ Transformer Stampings & C-V1 & 50.04 & 476.16 & 476.16 & 2.383e+04 & 0.01066 & 491.83 \\
+ Transformer Stampings & C-V2 & 50.00 & 281.34 & 281.34 & 1.407e+04 & 0.00707 & 132.31 \\
+ Transformer Stampings & C-V3 & 49.96 & 335.13 & 335.13 & 1.674e+04 & 0.00791 & 149.15 \\
+ Ferrite Rod & C-V1 & 49.95 & 52.56 & 52.56 & 2625.15 & 0.00255 & 86.39 \\
+ Ferrite Rod & C-V2 & 49.93 & 85.62 & 85.62 & 4274.97 & 0.00328 & 113.72 \\
+ Ferrite Rod & C-V3 & 49.95 & 207.75 & 207.75 & 1.038e+04 & 0.00459 & 101.54 \\
+ Iron Nail & C-V1 & 49.95 & 553.11 & 553.11 & 2.763e+04 & 0.02222 & 442.57 \\
+ Iron Nail & C-V2 & 49.97 & 1139.72 & 1139.72 & 5.695e+04 & 0.03144 & 608.07 \\
+ Iron Nail & C-V3 & 49.97 & 1936.36 & 1936.36 & 9.677e+04 & 0.04100 & 773.27 \\
+ Hacksaw Blade & C-V1 & 49.95 & 476.46 & 476.46 & 2.380e+04 & 0.03632 & 229.54 \\
+ Hacksaw Blade & C-V2 & 49.92 & 784.78 & 784.78 & 3.918e+04 & 0.04427 & 290.68 \\
+ Hacksaw Blade & C-V3 & 49.94 & 978.67 & 978.67 & 4.887e+04 & 0.05069 & 333.65 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{document}

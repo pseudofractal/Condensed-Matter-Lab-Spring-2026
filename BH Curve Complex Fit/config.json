@@ -1,0 +1,94 @@
+{
+  "instrument": {
+    "coil_turns": 300,
+    "coil_length_m": 0.0323,
+    "series_resistance_ohm": 55.0
+  },
+  "fit": {
+    "harmonic_order": 5
+  },
+  "blank": {
+    "run_index": 0,
+    "specimen_key": "blank"
+  },
+  "runs": [
+    {
+      "run_index": 0,
+      "specimen": "Blank",
+      "specimen_key": "blank",
+      "drive_label": "C-V1"
+    },
+    {
+      "run_index": 1,
+      "specimen": "Transformer Stampings",
+      "specimen_key": "transformer_stampings",
+      "drive_label": "C-V1"
+    },
+    {
+      "run_index": 2,
+      "specimen": "Transformer Stampings",
+      "specimen_key": "transformer_stampings",
+      "drive_label": "C-V2"
+    },
+    {
+      "run_index": 3,
+      "specimen": "Transformer Stampings",
+      "specimen_key": "transformer_stampings",
+      "drive_label": "C-V3"
+    },
+    {
+      "run_index": 4,
+      "specimen": "Ferrite Rod",
+      "specimen_key": "ferrite_rod",
+      "drive_label": "C-V1"
+    },
+    {
+      "run_index": 5,
+      "specimen": "Ferrite Rod",
+      "specimen_key": "ferrite_rod",
+      "drive_label": "C-V2"
+    },
+    {
+      "run_index": 6,
+      "specimen": "Ferrite Rod",
+      "specimen_key": "ferrite_rod",
+      "drive_label": "C-V3"
+    },
+    {
+      "run_index": 7,
+      "specimen": "Iron Nail",
+      "specimen_key": "iron_nail",
+      "drive_label": "C-V1"
+    },
+    {
+      "run_index": 8,
+      "specimen": "Iron Nail",
+      "specimen_key": "iron_nail",
+      "drive_label": "C-V2"
+    },
+    {
+      "run_index": 9,
+      "specimen": "Iron Nail",
+      "specimen_key": "iron_nail",
+      "drive_label": "C-V3"
+    },
+    {
+      "run_index": 10,
+      "specimen": "Hacksaw Blade",
+      "specimen_key": "hacksaw_blade",
+      "drive_label": "C-V1"
+    },
+    {
+      "run_index": 11,
+      "specimen": "Hacksaw Blade",
+      "specimen_key": "hacksaw_blade",
+      "drive_label": "C-V2"
+    },
+    {
+      "run_index": 12,
+      "specimen": "Hacksaw Blade",
+      "specimen_key": "hacksaw_blade",
+      "drive_label": "C-V3"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2026.2.11)  1 APR 2026 18:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"d:/Sem 8/PHY412/Condensed-Matter-Lab-Spring-2026/BH Curve Complex Fit/final/
+important_results_table.tex"
+
+(d:/Sem 8/PHY412/Condensed-Matter-Lab-Spring-2026/BH Curve Complex Fit/final/im
+portant_results_table.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.cl
+s
+Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files stan
+dalone
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex))
+\XKV@depth=\count187
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count188
+\c@sapage=\count189
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.cf
+g
+File: standalone.cfg 2022/10/10 v1.3b Default configuration file for 'standalon
+e' class
+) (C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count190
+\c@section=\count191
+\c@subsection=\count192
+\c@subsubsection=\count193
+\c@paragraph=\count194
+\c@subparagraph=\count195
+\c@figure=\count196
+\c@table=\count197
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box51
+\sift@deathcycles=\count198
+\@vwid@loff=\dimen141
+\@vwid@roff=\dimen142
+)
+\sa@box=\box52
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count199
+\@cmidlb=\count266
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count267
+\@lastruleclass=\count268
+\@thisrulewidth=\dimen155
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen156
+))
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen157
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count269
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count270
+\leftroot@=\count271
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count272
+\DOTSCASE@=\count273
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen158
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count274
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count275
+\dotsspace@=\muskip16
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks20
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks21
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\Dell\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
+ex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count281
+\l__pdf_internal_box=\box55
+)
+(d:\Sem 8\PHY412\Condensed-Matter-Lab-Spring-2026\BH Curve Complex Fit\final\im
+portant_results_table.aux)
+\openout1 = `important_results_table.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+ [1
+
+{C:/Users/Dell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(d:\Sem 8\PHY412\Condensed-Matter-Lab-Spring-2026\BH Curve Complex Fit\final\im
+portant_results_table.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 1878 strings out of 474486
+ 32111 string characters out of 5744227
+ 1940542 words of memory out of 5000000
+ 24181 multiletter control sequences out of 15000+600000
+ 561403 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,14n,71p,344b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cmextra/cmex9.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Users/Dell/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Dell/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Dell/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Dell/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Dell/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Dell/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users
+/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:
+/Users/Dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb>
+Output written on "d:\Sem 8\PHY412\Condensed-Matter-Lab-Spring-2026\BH Curve Co
+mplex Fit\final\important_results_table.pdf" (1 page, 125921 bytes).
+PDF statistics:
+ 61 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
